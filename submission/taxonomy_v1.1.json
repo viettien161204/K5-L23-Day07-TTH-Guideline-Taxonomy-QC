@@ -1,0 +1,72 @@
+{
+  "version": "v1.1",
+  "ignore_class": "ignore_region",
+  "classes": [
+    {
+      "name": "car",
+      "definition": "Ô tô con từ 4 đến 9 chỗ ngồi, thân kín, cabin liền khối (sedan, hatchback, SUV, wagon)."
+    },
+    {
+      "name": "truck",
+      "definition": "Xe tải hoặc bán tải chở hàng có cabin tách rời khỏi thùng hàng (thùng hở hoặc thùng có nắp), xe đầu kéo, xe chuyên dụng chở xe."
+    },
+    {
+      "name": "van",
+      "definition": "Xe thùng kín cỡ nhỏ hoặc vừa, thân liền khối một khoang, không thấy vách ngăn cabin–thùng từ bên ngoài."
+    },
+    {
+      "name": "bus",
+      "definition": "Xe buýt hoặc xe khách cỡ lớn chở nhiều người, thân dài một khối với dãy cửa sổ hành khách liên tiếp (từ 3 ô cửa sổ hành khách trở lên trên một bên thân xe)."
+    },
+    {
+      "name": "motorcycle",
+      "definition": "Xe 2 bánh có động cơ (xe số, xe ga, mô tô, xe máy điện, xe đạp điện) hoặc xe 2 bánh có sidecar."
+    },
+    {
+      "name": "bicycle",
+      "definition": "Xe đạp 2 bánh, không động cơ, không có thùng hoặc ghế khách gắn cố định (có thể chở hàng đặt trên yên hoặc giỏ)."
+    },
+    {
+      "name": "other_vehicle",
+      "definition": "Xe 3 bánh có cabin, thùng hàng hoặc ghế khách gắn cố định: tuk-tuk, xe lam, auto rickshaw, xích lô đạp chân, xe đạp 3 bánh chở hàng."
+    },
+    {
+      "name": "person",
+      "definition": "Người thật đi bộ, đứng, hoặc ngồi/đứng trên phương tiện hở (xe máy, xe đạp, xích lô, tuk-tuk hở)."
+    },
+    {
+      "name": "ignore_region",
+      "definition": "Vùng bỏ qua: 1 box ôm cụm người/xe nhỏ ở hậu cảnh mà không gán riêng từng vật."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "occluded_level",
+      "type": "select",
+      "values": ["0", "1", "2", "3"],
+      "default": "0"
+    },
+    {
+      "name": "truncated",
+      "type": "select",
+      "values": ["no", "yes"],
+      "default": "no"
+    },
+    {
+      "name": "can_review",
+      "type": "checkbox",
+      "values": [],
+      "default": "false"
+    }
+  ],
+  "rules": {
+    "min_box_height_px": 20,
+    "iou_thr_large": 0.85,
+    "iou_thr_small": 0.7,
+    "large_px": 50,
+    "iaa_iou": 0.85,
+    "iaa_class": 0.95,
+    "error_rate_img_max": 0.02,
+    "match_iou": 0.5
+  }
+}

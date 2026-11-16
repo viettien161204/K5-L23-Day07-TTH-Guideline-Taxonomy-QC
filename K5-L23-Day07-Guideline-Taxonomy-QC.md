@@ -3,7 +3,7 @@ day: "D07"
 title: "Day 07 Lab — Guideline, Taxonomy & QC"
 description: "Xây dựng guideline gán nhãn đủ dùng, chuẩn hóa taxonomy theo JSON Schema, gán bounding box độc lập bằng mã thành viên trên CVAT, đo IAA, calibration có truy vết phiên bản và bàn giao lô nhãn với quyết định Release / Hold / Rework."
 outcomes:
-  - "Viết được guideline cá nhân (`guideline_<mã>.md`) từ bản khởi đầu v0 và hợp nhất thành `guideline_v1.0_agreed.md` kèm mã quy tắc `R-01`, `R-02`… và `submission/taxonomy.json` hợp lệ theo `schemas/taxonomy.schema.json`."
+  - "Viết được guideline cá nhân (`guideline_<mã>.md`) từ bản khởi đầu v0 và hợp nhất thành `guideline_v1.1_calibrated.md` kèm mã quy tắc `R-01`, `R-02`… và `submission/taxonomy.json` hợp lệ theo `schemas/taxonomy.schema.json`."
   - "Chia ảnh gán mù đôi K=2 (hoặc K=3 với nhóm 5 người) theo mã thành viên 3 chữ số và xuất đủ nhãn COCO 1.0 từ CVAT vượt qua `python scripts/validate_labels.py --all`."
   - "Đo độ đồng thuận IAA bằng `qc_compare.py`, trực quan hóa ca lệch bằng `viz_disagreement.py`, hoàn thiện bảng 9 cột `calibration_decisions.csv`, `submission/guideline_change.json` và tạo `labels_calibrated.json` kèm `batch_manifest.json`."
   - "Thực hiện duyệt QC toàn lô theo vòng (`qc_sample.py --round 1`, `qc_report.py --round 1`), hoàn thiện `submission/qc/QC_REPORT.md` đủ 10 trường bắt buộc với quyết định Release / Hold / Rework và vượt qua `python scripts/check_submission.py --round 1` với 0 lỗi."
@@ -115,7 +115,7 @@ Khi đối chiếu chéo các bản cá nhân từ Pha 1, những bất đồng 
 
 ### Giải nghĩa phép thử lớp vs thuộc tính và mã quy tắc `R-xx`
 
-Khi hiệu chỉnh `submission/taxonomy.json`, bạn áp dụng phép thử trong [GUIDE.md](GUIDE.md): **"Mô hình phát hiện vật 2D có phải đoán ra thông tin này khi suy luận không?"**. Nếu **có** (như phân biệt `bus`, `tuk_tuk` với `car`, `motorcycle`), thông tin đó thuộc về danh sách `classes`. Nếu **không** — chỉ dùng để lọc mẫu khó hoặc kiểm QC như `occluded_level`, `truncated`, `can_review` — thì xếp vào `attributes`. Riêng `ignore_region` đánh dấu vùng đám đông dày đặc hoặc cụm vật cao `< 20 px`. Đồng thời, với các quy tắc hay được dẫn lại khi tranh luận (như không gán tượng/phản chiếu, không gán xe chủ, cách vẽ xe chở xe, cách ôm sát phần nhìn thấy), hãy gắn mã **`R-01`**, **`R-02`**, **`R-03`**… trong `guideline_v1.0_agreed.md` để sang Pha 5 và Pha 6 cả nhóm dẫn chiếu chính xác mã quy tắc vào phiếu quyết định và phiếu QC.
+Khi hiệu chỉnh `submission/taxonomy.json`, bạn áp dụng phép thử trong [GUIDE.md](GUIDE.md): **"Mô hình phát hiện vật 2D có phải đoán ra thông tin này khi suy luận không?"**. Nếu **có** (như phân biệt `bus`, `tuk_tuk` với `car`, `motorcycle`), thông tin đó thuộc về danh sách `classes`. Nếu **không** — chỉ dùng để lọc mẫu khó hoặc kiểm QC như `occluded_level`, `truncated`, `can_review` — thì xếp vào `attributes`. Riêng `ignore_region` đánh dấu vùng đám đông dày đặc hoặc cụm vật cao `< 20 px`. Đồng thời, với các quy tắc hay được dẫn lại khi tranh luận (như không gán tượng/phản chiếu, không gán xe chủ, cách vẽ xe chở xe, cách ôm sát phần nhìn thấy), hãy gắn mã **`R-01`**, **`R-02`**, **`R-03`**… trong `guideline_v1.1_calibrated.md` để sang Pha 5 và Pha 6 cả nhóm dẫn chiếu chính xác mã quy tắc vào phiếu quyết định và phiếu QC.
 
 ### Lựa chọn thiết kế: xác thực `schemas/taxonomy.schema.json` và giữ nguyên `rules`
 
@@ -124,8 +124,8 @@ Script `scripts/make_cvat_labels.py` không chỉ xuất tệp JSON cho CVAT mà
 ### Các bước thực hiện Pha 2
 
 1. Cả nhóm họp đối chiếu các bản `guideline_<mã>.md`, thảo luận trên ảnh gốc để chốt một quy tắc duy nhất cho từng bất đồng (phần nhìn thấy, che khuất, cắt mép, người đi xe máy, xe chở xe, ca ngoài phạm vi) và gắn mã `R-01`, `R-02`… cho các quy tắc trọng tâm.
-2. Lưu bản thống nhất tại `submission/guidelines/guideline_v1.0_agreed.md` (đủ 5 phần và bảng lịch sử `v0 → v1.0`).
-3. Cập nhật `submission/taxonomy.json`: đặt `"version": "v1.0"`, chỉnh `"classes"` và `"attributes"` khớp `guideline_v1.0_agreed.md`, **giữ nguyên mục `"rules"`**.
+2. Lưu bản thống nhất tại `submission/guidelines/guideline_v1.1_calibrated.md` (đủ 5 phần và bảng lịch sử `v0 → v1.0`).
+3. Cập nhật `submission/taxonomy.json`: đặt `"version": "v1.0"`, chỉnh `"classes"` và `"attributes"` khớp `guideline_v1.1_calibrated.md`, **giữ nguyên mục `"rules"`**.
 4. Chạy lệnh kiểm schema và sinh bộ nhãn cho CVAT:
 
 ```bash
@@ -134,7 +134,7 @@ python scripts/make_cvat_labels.py
 
    Nếu schema hợp lệ, terminal in toàn bộ mảng JSON 8 nhãn kèm dòng `# Đã ghi cvat\labels_generated.json (taxonomy v1.0). Dán nội dung vào CVAT: Project -> Labels -> Raw -> Done.`. Nếu báo lỗi ở trường nào, sửa đúng trường đó trong `submission/taxonomy.json` rồi chạy lại.
 
-5. Mở CVAT, vào **Projects → Create new project**, chọn tab **Labels → Raw**, dán toàn bộ `cvat/labels_generated.json`, bấm **Done** rồi **Submit & Open** và kiểm tra đủ thuộc tính cho từng lớp. Sau bước này, **khóa cứng** `guideline_v1.0_agreed.md` và `taxonomy.json` cho toàn bộ lượt gán độc lập ở Pha 3.
+5. Mở CVAT, vào **Projects → Create new project**, chọn tab **Labels → Raw**, dán toàn bộ `cvat/labels_generated.json`, bấm **Done** rồi **Submit & Open** và kiểm tra đủ thuộc tính cho từng lớp. Sau bước này, **khóa cứng** `guideline_v1.1_calibrated.md` và `taxonomy.json` cho toàn bộ lượt gán độc lập ở Pha 3.
 
 :::image{src="walkthrough_images/02_cvat_project_labels.png" alt="Trang Project trên CVAT hiển thị đủ 8 nhãn màu sinh từ make_cvat_labels.py" caption="Project trên CVAT sau khi dán JSON từ cvat/labels_generated.json: đủ 8 lớp (car, truck, van, bus, tuk_tuk, motorcycle, person, ignore_region)."}
 :::
@@ -175,7 +175,7 @@ python scripts/split_assign.py --members 101,102,103 --copy-images
 :::image{src="walkthrough_images/03_cvat_task_created.png" alt="Trang chi tiết Task trên CVAT hiển thị đủ số khung hình được giao" caption="Trang chi tiết Task trên CVAT xác nhận số lượng frame khớp với danh sách phân công."}
 :::
 
-3. Mở Job và vẽ box bằng phím `N` (Rectangle) theo đúng `guideline_v1.0_agreed.md`, chọn `occluded_level`, `truncated` và `can_review` ở panel **Objects** bên phải, dùng `F`/`D` chuyển ảnh và `Ctrl+S` lưu thường xuyên.
+3. Mở Job và vẽ box bằng phím `N` (Rectangle) theo đúng `guideline_v1.1_calibrated.md`, chọn `occluded_level`, `truncated` và `can_review` ở panel **Objects** bên phải, dùng `F`/`D` chuyển ảnh và `Ctrl+S` lưu thường xuyên.
 
 :::image{src="walkthrough_images/04_cvat_annotation_workspace.png" alt="Không gian gán nhãn CVAT trên ảnh img_001.jpg hiển thị box truck và person cùng thuộc tính occluded_level=1 và truncated=yes" caption="Thao tác vẽ Rectangle và chọn thuộc tính occluded_level, truncated trên CVAT cho img_001.jpg."}
 :::

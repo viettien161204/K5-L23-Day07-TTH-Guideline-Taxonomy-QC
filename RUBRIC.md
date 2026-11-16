@@ -5,7 +5,7 @@ Chấm theo **bằng chứng** và cách giải thích. Hold hoặc Rework có c
 | # | Hạng mục | Điểm | Bằng chứng |
 |---|---|---:|---|
 | 1 | Guideline cá nhân | 15 | `individual/guideline_<mã>.md` |
-| 2 | Guideline nhóm và taxonomy | 20 | `guideline_v1.0_agreed.md`, `taxonomy.json` |
+| 2 | Guideline nhóm và taxonomy | 20 | `guideline_v1.1_calibrated.md`, `taxonomy.json` |
 | 3 | Phân công và gán độc lập | 15 | `assignment.csv`, `labels/<mã>.json` |
 | 4 | IAA và calibration | 25 | `iaa_summary.md`, `calibration_decisions.csv`, `guideline_v1.1`, nhãn cuối |
 | 5 | QC và báo cáo | 15 | `reviews/round-*/`, `QC_REPORT.md` |

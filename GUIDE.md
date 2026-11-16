@@ -8,7 +8,7 @@ Bài nhóm 2–5 người, **4 giờ**, làm trên **cả 40 ảnh**. Chạy l�
 |---|---|---|---|
 | 0 (15') | Cài đặt, nhận mã | `pip install -r requirements.txt` | `TEAM.md` |
 | 1 (35') | Mỗi người sửa guideline v0 | (đọc 40 ảnh) | `individual/guideline_<mã>.md` |
-| 2 (30') | Họp, thống nhất | `make_cvat_labels.py` | `guideline_v1.0_agreed.md`, `taxonomy.json` |
+| 2 (30') | Họp, thống nhất | `make_cvat_labels.py` | `guideline_v1.1_calibrated.md`, `taxonomy.json` |
 | nghỉ (10') | | | |
 | 3 (60') | Chia ảnh, gán độc lập | `split_assign.py`, `validate_labels.py` | `labels/<mã>.json` |
 | 4 (20') | So sánh, đo IAA | `qc_compare.py`, `viz_disagreement.py` | `iaa_summary.md`, `calibration_candidates.csv` |
@@ -36,7 +36,7 @@ Mã thành viên có ba chữ số (ví dụ `101`, `102`) và dùng trong tên 
 ## Pha 2 — Chốt đặc tả của nhóm (họp)
 
 1. So các bản cá nhân. Chốt quy tắc cho mô hình phát hiện vật trên ảnh 2D: định nghĩa lớp, thuộc tính, phần nhìn thấy, che khuất, cắt mép, ca ngoài phạm vi. Gắn mã `R-01`, `R-02`… cho quy tắc hay được dẫn lại.
-2. Lưu `submission/guidelines/guideline_v1.0_agreed.md`.
+2. Lưu `submission/guidelines/guideline_v1.1_calibrated.md`.
 3. Sửa `submission/taxonomy.json` cho khớp: đặt `version` là `v1.0`, **giữ nguyên mục `rules`** (các ngưỡng).
 4. Chạy `python scripts/make_cvat_labels.py` (kiểm schema và sinh `cvat/labels_generated.json`). Báo sai ở trường nào thì sửa đúng trường đó.
 5. **Khóa** guideline và taxonomy v1.0 cho lượt gán độc lập.

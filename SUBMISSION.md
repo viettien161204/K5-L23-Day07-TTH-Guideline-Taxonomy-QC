@@ -12,7 +12,7 @@
 | Nhóm | Gồm có |
 |---|---|
 | Nhóm và nguồn | `TEAM.md`, `data/ATTRIBUTION.csv` |
-| Đặc tả | `submission/guidelines/individual/guideline_<mã>.md`; `guideline_v1.0_agreed.md`, `guideline_v1.1_calibrated.md`; `submission/guideline_change.json`; `submission/taxonomy.json` (và `taxonomy_v1.1.json` nếu đổi schema) |
+| Đặc tả | `submission/guidelines/individual/guideline_<mã>.md`; `guideline_v1.1_calibrated.md`, `guideline_v1.1_calibrated.md`; `submission/guideline_change.json`; `submission/taxonomy.json` (và `taxonomy_v1.1.json` nếu đổi schema) |
 | Gán độc lập | `submission/labels/<mã>.json`; `submission/qc/assignment.csv`; `image_issues.csv` nếu có ca chưa có box |
 | Calibration | `iaa_summary.json/.md`, `calibration_candidates.csv`, `flagged_images.txt`, `consensus_draft.json`, `calibration_decisions.csv`, `calibration_context.json`; COCO phạm vi đã sửa nếu có |
 | Nhãn cuối | `labels_calibrated.json`, `labels_calibrated.csv`, `batch_manifest.json` |
