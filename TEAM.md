@@ -4,7 +4,7 @@
 - Mã thành viên (ba chữ số): 101, 102, 103
 - Người điều phối: Nguyễn Viết Tiến (101)
 - Người review bản cuối: Phạm Thanh Tùng (102)
-- Commit chốt bài (điền ở kênh nộp sau khi commit):
+- Commit chốt bài (điền ở kênh nộp sau khi commit): 1660bcc5ff41a2e290e8a4c429780f1725fa26ae 
 
 ## Kết quả tóm tắt (điền cuối bài)
 
