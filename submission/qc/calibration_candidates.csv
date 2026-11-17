@@ -1,66 +1,25 @@
 case_id,image,issue_type,annotators,class_a,class_b,box_a,box_b,iou,ghi_chu_tu_dong
-C001,img_001.jpg,iou_thap,101|102,person,person,"[599,298,37,88]","[603,303,41,89]",0.66,IoU 0.66 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C002,img_001.jpg,sai_thuoc_tinh,101|102,car,car,"[54,282,163,93]","[53,281,157,92]",0.92,truncated: 101=yes vs 102=no
-C003,img_001.jpg,sai_thuoc_tinh,101|102,car,car,"[228,287,180,94]","[231,292,183,93]",0.87,occluded_level: 101=1 vs 102=0
-C004,img_002.jpg,iou_thap,102|103,motorcycle,motorcycle,"[650,213,78,108]","[651,219,73,113]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C005,img_002.jpg,iou_thap,102|103,person,person,"[498,241,32,80]","[503,241,37,77]",0.62,IoU 0.62 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C006,img_003.jpg,iou_thap,101|103,person,person,"[820,378,33,87]","[822,382,35,92]",0.73,IoU 0.73 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C007,img_004.jpg,iou_thap,102|103,person,person,"[647,298,39,82]","[648,299,41,86]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C008,img_004.jpg,iou_thap,102|103,motorcycle,motorcycle,"[756,289,63,81]","[760,293,67,82]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C009,img_004.jpg,sai_lop,102|103,motorcycle,bicycle,"[274,294,71,81]","[272,292,71,77]",0.86,"102 gán motorcycle, 103 gán bicycle cho cùng một vật"
-C010,img_004.jpg,sai_thuoc_tinh,102|103,car,car,"[64,279,169,94]","[57,282,169,95]",0.86,truncated: 102=yes vs 103=no
-C011,img_004.jpg,sai_thuoc_tinh,102|103,person,person,"[647,298,39,82]","[648,299,41,86]",0.84,occluded_level: 102=1 vs 103=0
-C012,img_005.jpg,iou_thap,101|102,motorcycle,motorcycle,"[703,307,70,77]","[696,308,70,82]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C013,img_005.jpg,sai_lop,101|102,van,car,"[464,267,201,120]","[456,265,202,119]",0.89,"101 gán van, 102 gán car cho cùng một vật"
-C014,img_005.jpg,sai_thuoc_tinh,101|102,car,car,"[49,293,162,90]","[51,293,158,90]",0.98,truncated: 101=yes vs 102=no
-C015,img_006.jpg,iou_thap,101|103,person,person,"[894,268,33,80]","[890,272,29,78]",0.63,IoU 0.63 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C016,img_006.jpg,sai_lop,101|103,truck,van,"[640,220,231,153]","[639,222,230,150]",0.97,"101 gán truck, 103 gán van cho cùng một vật"
-C017,img_007.jpg,iou_thap,102|103,motorcycle,motorcycle,"[477,292,65,81]","[481,298,66,82]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C018,img_008.jpg,iou_thap,101|102,car,car,"[50,292,161,92]","[54,288,161,87]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C019,img_008.jpg,sai_thuoc_tinh,101|102,car,car,"[511,286,171,94]","[510,282,173,93]",0.90,occluded_level: 101=1 vs 102=0
-C020,img_008.jpg,sai_thuoc_tinh,101|102,car,car,"[50,292,161,92]","[54,288,161,87]",0.83,truncated: 101=yes vs 102=no
-C021,img_009.jpg,sai_thuoc_tinh,101|103,car,car,"[450,224,180,102]","[446,224,183,103]",0.96,occluded_level: 101=1 vs 103=0
-C022,img_010.jpg,iou_thap,101|102,car,car,"[56,288,164,90]","[58,293,162,95]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C023,img_010.jpg,iou_thap,101|102,car,car,"[720,278,160,93]","[720,272,160,88]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C024,img_010.jpg,sai_lop,101|102,van,truck,"[494,269,198,121]","[492,265,199,121]",0.92,"101 gán van, 102 gán truck cho cùng một vật"
-C025,img_010.jpg,sai_thuoc_tinh,101|102,car,car,"[56,288,164,90]","[58,293,162,95]",0.84,truncated: 101=yes vs 102=no
-C026,img_011.jpg,iou_thap,101|103,car,car,"[46,277,160,87]","[54,277,160,93]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C027,img_011.jpg,iou_thap,101|103,motorcycle,motorcycle,"[236,301,63,77]","[238,302,65,83]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C028,img_011.jpg,iou_thap,101|103,person,person,"[798,291,32,85]","[800,289,36,84]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C029,img_011.jpg,sai_thuoc_tinh,101|103,car,car,"[46,277,160,87]","[54,277,160,93]",0.85,truncated: 101=yes vs 103=no
-C030,img_012.jpg,iou_thap,102|103,car,car,"[645,263,177,103]","[637,267,171,100]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C031,img_012.jpg,iou_thap,102|103,person,person,"[859,288,35,82]","[862,288,30,85]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C032,img_012.jpg,iou_thap,102|103,motorcycle,motorcycle,"[501,296,63,82]","[496,295,65,78]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C033,img_012.jpg,sai_thuoc_tinh,102|103,car,car,"[281,278,177,96]","[283,277,182,96]",0.93,occluded_level: 102=1 vs 103=0
-C034,img_014.jpg,sai_lop,102|103,truck,van,"[274,306,231,158]","[269,308,228,157]",0.93,"102 gán truck, 103 gán van cho cùng một vật"
-C035,img_015.jpg,iou_thap,101|103,person,person,"[641,273,36,87]","[643,278,32,84]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C036,img_015.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[499,277,67,83]","[499,279,62,79]",0.88,occluded_level: 101=1 vs 103=0
-C037,img_016.jpg,iou_thap,101|103,motorcycle,motorcycle,"[760,373,64,83]","[758,367,67,79]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C038,img_019.jpg,iou_thap,102|103,car,car,"[64,293,168,94]","[61,287,165,95]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C039,img_019.jpg,sai_thuoc_tinh,102|103,motorcycle,motorcycle,"[503,300,67,79]","[504,298,63,82]",0.91,occluded_level: 102=0 vs 103=1
-C040,img_021.jpg,iou_thap,101|102,motorcycle,motorcycle,"[268,307,63,78]","[266,310,66,83]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C041,img_022.jpg,iou_thap,102|103,person,person,"[887,398,35,87]","[887,400,30,82]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C042,img_022.jpg,sai_thuoc_tinh,102|103,truck,truck,"[490,339,224,156]","[495,337,229,154]",0.90,occluded_level: 102=1 vs 103=0
-C043,img_022.jpg,sai_thuoc_tinh,102|103,person,person,"[887,398,35,87]","[887,400,30,82]",0.81,truncated: 102=yes vs 103=no
-C044,img_023.jpg,iou_thap,101|102,person,person,"[651,242,33,84]","[647,248,38,83]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C045,img_024.jpg,iou_thap,101|103,motorcycle,motorcycle,"[498,367,62,83]","[503,365,67,79]",0.73,IoU 0.73 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C046,img_024.jpg,sai_lop,101|103,truck,van,"[644,318,233,156]","[638,322,234,154]",0.92,"101 gán truck, 103 gán van cho cùng một vật"
-C047,img_025.jpg,iou_thap,101|102,person,person,"[824,282,38,86]","[818,284,38,82]",0.70,IoU 0.70 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C048,img_025.jpg,sai_thuoc_tinh,101|102,car,car,"[617,267,170,94]","[619,262,170,94]",0.88,occluded_level: 101=1 vs 102=0
-C049,img_026.jpg,sai_thuoc_tinh,101|103,car,car,"[408,461,184,102]","[412,461,177,98]",0.92,occluded_level: 101=1 vs 103=0
-C050,img_028.jpg,iou_thap,101|102,motorcycle,motorcycle,"[497,367,63,77]","[500,363,66,82]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C051,img_028.jpg,sai_thuoc_tinh,101|102,person,person,"[889,360,35,84]","[889,362,36,87]",0.90,truncated: 101=yes vs 102=no
-C052,img_029.jpg,sai_thuoc_tinh,102|103,motorcycle,motorcycle,"[473,184,65,79]","[473,184,65,81]",0.98,occluded_level: 102=0 vs 103=1
-C053,img_030.jpg,iou_thap,101|103,motorcycle,motorcycle,"[80,347,71,82]","[78,352,67,83]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C054,img_031.jpg,iou_thap,102|103,person,person,"[666,288,35,82]","[667,292,38,88]",0.74,IoU 0.74 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C055,img_031.jpg,sai_thuoc_tinh,102|103,motorcycle,motorcycle,"[499,293,65,79]","[498,292,65,79]",0.95,occluded_level: 102=1 vs 103=0
-C056,img_032.jpg,iou_thap,101|103,car,car,"[534,272,169,92]","[529,277,168,95]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C057,img_034.jpg,iou_thap,102|103,motorcycle,motorcycle,"[480,257,63,80]","[479,263,65,81]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C058,img_034.jpg,iou_thap,102|103,person,person,"[638,255,33,84]","[641,252,32,84]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C059,img_035.jpg,iou_thap,101|103,car,car,"[265,349,179,100]","[272,344,184,101]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C060,img_036.jpg,iou_thap,101|102,person,person,"[879,357,37,83]","[880,363,36,88]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C061,img_036.jpg,sai_thuoc_tinh,101|102,person,person,"[879,357,37,83]","[880,363,36,88]",0.80,truncated: 101=yes vs 102=no
-C062,img_037.jpg,iou_thap,101|102,person,person,"[887,357,33,84]","[887,363,35,83]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C063,img_037.jpg,iou_thap,101|102,motorcycle,motorcycle,"[760,367,68,77]","[756,365,62,83]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C064,img_039.jpg,iou_thap,101|103,car,car,"[401,237,174,92]","[397,242,173,95]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
-C065,img_040.jpg,iou_thap,102|103,person,person,"[889,283,30,83]","[892,282,36,83]",0.68,IoU 0.68 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C001,img_001.jpg,sai_thuoc_tinh,101|102,person,person,"[376,115,179,213]","[376,113,179,211]",0.97,occluded_level: 101=1 vs 102=0
+C002,img_004.jpg,sai_lop,102|103,other_vehicle,car,"[72,76,401,504]","[70,76,403,506]",0.99,"102 gán other_vehicle, 103 gán car cho cùng một vật"
+C003,img_004.jpg,sai_thuoc_tinh,102|103,other_vehicle,car,"[72,76,401,504]","[70,76,403,506]",0.99,truncated: 102=no vs 103=yes
+C004,img_004.jpg,sai_thuoc_tinh,102|103,person,person,"[200,190,150,350]","[202,192,151,352]",0.95,occluded_level: 102=1 vs 103=0
+C005,img_005.jpg,sai_lop,101|102,car,van,"[132,32,827,324]","[132,30,828,326]",0.99,"101 gán car, 102 gán van cho cùng một vật"
+C006,img_006.jpg,sai_lop,101|103,other_vehicle,bicycle,"[84,248,188,241]","[84,246,189,242]",0.98,"101 gán other_vehicle, 103 gán bicycle cho cùng một vật"
+C007,img_008.jpg,sai_thuoc_tinh,101|102,motorcycle,motorcycle,"[65,283,336,355]","[66,281,337,353]",0.97,occluded_level: 101=0 vs 102=1
+C008,img_009.jpg,sai_thuoc_tinh,101|103,other_vehicle,other_vehicle,"[709,439,67,39]","[711,437,67,38]",0.83,occluded_level: 101=1 vs 103=0
+C009,img_010.jpg,sai_lop,101|102,motorcycle,bicycle,"[634,345,254,278]","[635,344,252,276]",0.98,"101 gán motorcycle, 102 gán bicycle cho cùng một vật"
+C010,img_011.jpg,iou_thap,101|103,person,person,"[195,341,32,62]","[196,339,34,62]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C011,img_012.jpg,sai_thuoc_tinh,102|103,car,car,"[0,286,252,177]","[2,286,253,178]",0.97,truncated: 102=no vs 103=yes
+C012,img_012.jpg,sai_thuoc_tinh,102|103,car,car,"[327,208,153,162]","[325,206,152,164]",0.96,occluded_level: 102=1 vs 103=0
+C013,img_015.jpg,sai_thuoc_tinh,101|103,car,car,"[764,52,196,384]","[765,52,195,386]",0.99,occluded_level: 101=0 vs 103=1
+C014,img_023.jpg,iou_thap,101|102,person,person,"[749,166,38,79]","[750,164,40,78]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C015,img_024.jpg,sai_lop,101|103,truck,van,"[240,45,463,202]","[240,43,463,201]",0.98,"101 gán truck, 103 gán van cho cùng một vật"
+C016,img_026.jpg,sai_thuoc_tinh,101|103,motorcycle,motorcycle,"[290,740,410,260]","[289,738,408,262]",0.98,truncated: 101=yes vs 103=no
+C017,img_028.jpg,sai_thuoc_tinh,101|102,truck,truck,"[14,290,923,413]","[15,291,921,414]",0.99,truncated: 101=no vs 102=yes
+C018,img_029.jpg,sai_lop,102|103,motorcycle,bicycle,"[326,208,232,167]","[328,207,230,168]",0.99,"102 gán motorcycle, 103 gán bicycle cho cùng một vật"
+C019,img_031.jpg,iou_thap,102|103,person,person,"[159,374,25,53]","[158,376,27,54]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C020,img_031.jpg,iou_thap,102|103,person,person,"[232,366,32,68]","[231,368,30,68]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C021,img_032.jpg,iou_thap,101|103,person,person,"[781,275,39,95]","[783,273,40,95]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C022,img_034.jpg,iou_thap,102|103,person,person,"[770,230,37,78]","[768,231,35,77]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C023,img_036.jpg,sai_thuoc_tinh,101|102,truck,truck,"[64,57,825,620]","[65,57,823,620]",1.00,truncated: 101=no vs 102=yes
+C024,img_039.jpg,iou_thap,101|103,person,person,"[696,412,31,76]","[698,413,31,77]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)

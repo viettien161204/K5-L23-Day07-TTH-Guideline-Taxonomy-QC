@@ -1,66 +1,25 @@
 case_id,image,quyet_dinh,quy_tac_ghi_vao_guideline,phien_ban_guideline,nguoi_chot,phieu_sua,kiem_lai,pham_vi
-C001,img_001.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,lo
-C002,img_001.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C003,img_001.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C004,img_002.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C005,img_002.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C006,img_003.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C007,img_004.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C008,img_004.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C009,img_004.jpg,chot_motorcycle,Xe co dong co hoac bien so gan motorcycle; xe dap thuan tuy gan bicycle,v1.1,101,101,102,anh
-C010,img_004.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C011,img_004.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C012,img_005.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C013,img_005.jpg,chot_van,Xe tu 7-9 cho co dang khoi MPV gan van; sedan/SUV nho gan car,v1.1,101,101,102,anh
-C014,img_005.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C015,img_006.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C016,img_006.jpg,chot_truck,Xe co ket cau thung hang tach roi cabin gan truck; xe lien khoi gan van,v1.1,101,101,102,anh
-C017,img_007.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C018,img_008.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C019,img_008.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C020,img_008.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C021,img_009.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C022,img_010.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C023,img_010.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C024,img_010.jpg,chot_truck,Xe co ket cau thung hang tach roi cabin gan truck; xe lien khoi gan van,v1.1,101,101,102,anh
-C025,img_010.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C026,img_011.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C027,img_011.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C028,img_011.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C029,img_011.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C030,img_012.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C031,img_012.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C032,img_012.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C033,img_012.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C034,img_014.jpg,chot_truck,Xe co ket cau thung hang tach roi cabin gan truck; xe lien khoi gan van,v1.1,101,101,102,anh
-C035,img_015.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C036,img_015.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C037,img_016.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C038,img_019.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C039,img_019.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C040,img_021.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C041,img_022.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C042,img_022.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C043,img_022.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C044,img_023.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C045,img_024.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C046,img_024.jpg,chot_truck,Xe co ket cau thung hang tach roi cabin gan truck; xe lien khoi gan van,v1.1,101,101,102,anh
-C047,img_025.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C048,img_025.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C049,img_026.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C050,img_028.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C051,img_028.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C052,img_029.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C053,img_030.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C054,img_031.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C055,img_031.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
-C056,img_032.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C057,img_034.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C058,img_034.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C059,img_035.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C060,img_036.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C061,img_036.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
-C062,img_037.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C063,img_037.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C064,img_039.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
-C065,img_040.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
+C001,img_001.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,lo
+C002,img_004.jpg,chot_other_vehicle,Thong nhat phan lop theo muc 2 taxonomy,v1.1,101,101,102,anh
+C003,img_004.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
+C004,img_004.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
+C005,img_005.jpg,chot_van,Xe tu 7-9 cho co dang khoi MPV gan van; sedan/SUV nho gan car,v1.1,101,101,102,anh
+C006,img_006.jpg,chot_other_vehicle,Thong nhat phan lop theo muc 2 taxonomy,v1.1,101,101,102,anh
+C007,img_008.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
+C008,img_009.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
+C009,img_010.jpg,chot_motorcycle,Xe co dong co hoac bien so gan motorcycle; xe dap thuan tuy gan bicycle,v1.1,101,101,102,anh
+C010,img_011.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
+C011,img_012.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
+C012,img_012.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
+C013,img_015.jpg,chot_occluded_1,Vat bi che khuat nhe duoi 30% danh muc 1; khong bi che danh muc 0,v1.1,101,101,102,anh
+C014,img_023.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
+C015,img_024.jpg,chot_truck,Xe co ket cau thung hang tach roi cabin gan truck; xe lien khoi gan van,v1.1,101,101,102,anh
+C016,img_026.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
+C017,img_028.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
+C018,img_029.jpg,chot_motorcycle,Xe co dong co hoac bien so gan motorcycle; xe dap thuan tuy gan bicycle,v1.1,101,101,102,anh
+C019,img_031.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
+C020,img_031.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
+C021,img_032.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
+C022,img_034.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
+C023,img_036.jpg,chot_truncated_yes,Vat cham hoac vuot bien anh danh truncated=yes theo quy tac bien anh,v1.1,101,101,102,anh
+C024,img_039.jpg,giu_nguyen,IoU chap nhan do lech goc bien vat the o cu ly xa hoac box nho duoi 50px,v1.1,101,101,102,anh
